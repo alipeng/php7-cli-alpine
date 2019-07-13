@@ -1,6 +1,6 @@
 FROM php:cli-alpine
 
-LABEL maintainer Alipeng <lipeng.yang@mobvista.com>
+LABEL maintainer Alipeng <alipeng@aliyun.com>
 
 RUN apk --update --virtual build-deps add \
         autoconf \
@@ -8,7 +8,7 @@ RUN apk --update --virtual build-deps add \
         gcc \
         g++ \
         libtool \
-	      icu-dev \
+	icu-dev \
         freetype-dev \
         pcre-dev \
         libjpeg-turbo-dev \
@@ -16,7 +16,7 @@ RUN apk --update --virtual build-deps add \
         libzip-dev \
         libxml2-dev && \
     apk add \
-    	  icu \
+    	icu \
         libintl \
         freetype \
         libintl \
@@ -54,6 +54,3 @@ RUN apk --update --virtual build-deps add \
 
 WORKDIR /var/www
 
-CMD ["php-fpm"]
-
-EXPOSE 9000
