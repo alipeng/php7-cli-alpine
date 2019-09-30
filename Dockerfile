@@ -8,15 +8,16 @@ RUN apk --update --virtual build-deps add \
         gcc \
         g++ \
         libtool \
-	icu-dev \
+	      icu-dev \
         freetype-dev \
         pcre-dev \
         libjpeg-turbo-dev \
         libpng-dev \
         libzip-dev \
-        libxml2-dev && \
+        libxml2-dev \
+        postgresql-dev && \
     apk add \
-    	icu \
+    	  icu \
         libintl \
         freetype \
         libintl \
