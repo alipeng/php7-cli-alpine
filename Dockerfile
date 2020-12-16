@@ -1,4 +1,4 @@
-FROM php:cli-alpine
+FROM php:7-cli-alpine
 
 LABEL maintainer Alipeng <alipeng@aliyun.com>
 
